@@ -1,0 +1,484 @@
+
+
+.body  
+   { background-color: #cf7e7e;
+     font-family: Arial, sans-serif;
+     font-size: 10px;
+     line-height: 1.5;
+     padding: 0;
+     padding-left: 10px;
+     padding-right: 10px;
+     margin-right: 10px;
+     margin-left: 10px;
+     margin: 10px auto;
+     width:100%;
+    
+  }
+
+  .container
+  {
+    width:100%;
+    height:1200px;
+    background-color: rgb(228, 228, 212);
+    
+  }
+  /* header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #010000;
+
+  }
+/* Social div */
+  .social {
+    width: 20%;
+  }
+  .social img {
+    width: 10%;
+    height: auto;
+    display:flex;
+  }
+  
+  /* Welcome text */
+  .welcome {
+    width: 50%;
+    text-align: center;
+    color: rgb(233, 242, 173);
+    padding-left: 50px;
+  }
+  
+  /* Navigation */
+
+  .navigation {
+    width: auto;
+    text-align: right;
+    padding-right:10px;
+  }
+  
+  .navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+
+  .navigation li:last-child {
+    margin-right: 0;
+  }
+
+/* Separate styles for profile icon */
+.social-icon.profile-icon {
+  height: 30px;
+  width: 30px;
+}
+
+/* Separate styles for other social icons */
+.social-icon {
+  height: 30px;
+  width: 30px;
+}
+
+
+  /* tabular stylings  below the slider  */
+
+
+  .menu-container {
+	background: rgb(232, 233, 206);
+	width: 100%;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.menu-item {
+
+ 
+	flex: 1;
+	text-align: center;
+  margin: 80px;
+  border-radius: 60%;
+  background-color: rgb(233, 172, 102);
+  border:none;
+  
+}
+
+.menu-item a {
+	text-decoration: none;
+	color: whitesmoke;
+  text-decoration:5px solid;
+	display: block;
+	padding: 10px;
+}
+
+.menu-item:hover {
+	background-color: #080240;
+}
+
+
+
+
+  /* slider */
+
+  .slider-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    padding: 5px auto;
+    margin: 40px auto;
+    background-color: rgb(239, 239, 190);
+  }
+  
+  .slider {
+    display:block;
+    width: 100%;
+    animation: slide 3s infinite;
+    
+  }
+  
+  .slider img {
+    width: 100%;
+    height:auto;
+    
+
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(-100%); }
+    66.66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+  }
+
+
+/* offer zone */
+
+.offer_zone
+{
+  text-align:center; 
+  color:#010101; 
+  font-size:24px;
+
+}
+
+
+
+/*  lower  container styles */
+
+.category-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    height: 50px;
+    margin: 0;
+
+  }
+  
+  .category-item {
+    padding: 30px;
+    text-align: center;
+    margin:30px auto;
+  }
+  
+  .category-image {
+    float: left;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+
+  }
+
+
+  /* Footer */
+
+  .footer {
+    background:rgb(2, 0, 0);
+    width:100%;
+    height: 50px; /* adjust as needed */
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    color: #fbf8f8;
+
+    padding-right: 30px;
+    padding-top: 20px;
+  }
+
+
+
+
+  /*////////////////////////////////////////////////////////////////////////////*/
+ 
+  /* Men Page ,women page , Beauty page , Life style Page and some  details of Kids page stylings included   */
+ 
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Content styles */
+#inner_page {
+  text-align: center;
+  padding: 20px;
+}
+
+
+#page_header {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 28px;
+  line-height: 1.2;
+  display: inline-block; /* Add this line */
+}
+
+#banner {
+  margin-top: 20px;
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+#banner-image {
+
+  height: 300px;
+  width: 100%;
+  padding:20px;
+  object-fit: cover;
+}
+
+/* Category section styles */
+#item_data_list {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #8f9f5a;
+  min-height: calc(100vh - 270px); /* Adjust the value as needed */
+  display: flex;
+  flex-direction: column;
+}
+
+#inner_page {
+  flex-grow: 1;
+}
+#item_header {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#inner_page_header {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#item_list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#item_list li {
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.item_image {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+/*///////////////////////////////////////////////////////////////////////*/
+
+/* Kids Page */
+
+#main_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: auto; /* Add this line to clear the float */
+}
+
+#boy_content,
+#girl_content {
+  width: 46%; /* Adjust the width percentage as needed */
+  float: left; /* Add this line */
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  
+}
+#boy_content {
+  background-color: #b5d1ff; /* Update the background color for the boy_content */
+}
+
+#girl_content {
+  background-color: #ffbddb; /* Update the background color for the girl_content */
+}
+
+/* #boy_content,
+#girl_content,
+#boy_content img,
+#girl_content img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+} */
+
+
+#boy_category-title , #girl_category-title
+
+{
+  font-size: 20px;
+}
+
+#boy_category_image img,
+#girl_category_image img {
+  width: 100%;
+  height: 300px;
+  border-radius: 4px;
+  align-items:center;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .category {
+    width: 100%;
+  }
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* REGISTRATION PAGE */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  background-color: rgb(251, 249, 249);
+  margin: 0;
+  padding: 0;
+  background-image: url('https://cdn.britannica.com/84/73184-050-05ED59CB/Sunflower-field-Fargo-North-Dakota.jpg');
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  background-color: aliceblue;
+}
+
+.registration-form {
+  width: 35%;
+  margin: auto;
+  background-color: rgb(109, 156, 135);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.form-label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.radio-label {
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+.form-radio {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.form-radio input[type="radio"] {
+  margin-right: 3px;
+}
+.form-checkbox {
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.form-select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.form-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(51, 138, 235);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.form-button:hover {
+  background-color: rgb(33, 113, 194);
+}
